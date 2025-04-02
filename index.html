@@ -18,7 +18,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            height: auto;
             background: linear-gradient(135deg, #1e1e1e, #121212);
             color: #ffffff;
         }
@@ -30,7 +31,9 @@
             border-radius: 15px;
             padding: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            width: 450px;
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 450px;
         }
 
         h1 {
@@ -112,18 +115,6 @@
         @keyframes confetti-fall {
             0% { transform: translateY(-100vh) rotate(0deg); }
             100% { transform: translateY(100vh) rotate(360deg); }
-        }
-        @media (max-width: 480px) {
-            h1 { font-size: 20px; }
-            button { font-size: 14px; padding: 10px; }
-            input { font-size: 14px; }
-            .message, .score, .resultMessage { font-size: 14px; }
-            .game-container {
-    
-    width: 360px;
-}
-
-
         }
     </style>
 </head>
